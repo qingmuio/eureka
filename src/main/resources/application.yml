@@ -1,0 +1,16 @@
+server:
+  port: ${PORT:8761}
+spring:
+  application:
+    name: eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    com:
+      netflix:
+        eureka:
+          registry: error
