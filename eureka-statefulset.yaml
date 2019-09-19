@@ -30,13 +30,13 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: freemanliu/eureka:v1.0.0
+          image: freemanliu/eureka:v1.0.1
           ports:
             - containerPort: 8761
           resources:
             limits:
               # jvm会自动发现该限制
-              memory: 2Gi
+              memory: 1Gi
           env:
             - name: MY_POD_NAME
               valueFrom:
