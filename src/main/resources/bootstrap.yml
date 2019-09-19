@@ -6,7 +6,7 @@ eureka:
     use-read-only-response-cache: false
   client:
     # eureka client间隔多久去拉取服务注册信息 默认30s
-    registry-fetch-interval-seconds: 30
+    registry-fetch-interval-seconds: 5
     serviceUrl:
       defaultZone: ${EUREKA_SERVER:http://127.0.0.1:${server.port}/eureka/}
   instance:
