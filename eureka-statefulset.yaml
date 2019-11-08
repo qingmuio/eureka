@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: freemanliu/eureka:v1.0.1
+          image: freemanliu/eureka:v1.1.1
           ports:
             - containerPort: 8761
           resources:
